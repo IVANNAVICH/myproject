@@ -1,0 +1,34 @@
+.blog__flex-block{
+display: flex;
+gap: 20px;
+}
+
+.blog {
+    @include e(item1){
+display: block;
+flex-basis: 50%;
+    }
+}
+
+.blog {
+    @include e(item2){
+display: block;
+flex-basis: 50%;
+
+    }
+}
+
+.blog {
+    @include e(img-block){
+        border: none;
+        border-radius: none;
+        overflow: initial;
+
+    }
+}
+
+.blog__hearts {
+    
+    font-size: 3rem;
+  
+}

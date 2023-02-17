@@ -1,0 +1,106 @@
+.testimonial {
+    background: imageDesign("dough-bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 50px 0 10px;
+}
+
+.testimonial {
+    @include e(h2){
+        font-weight: 400;
+        color: $black;
+        text-align: center;
+        margin: 0;
+        font-family: $secondFontFamily;
+        font-size: 30px;
+        letter-spacing: 0;
+        margin-bottom: 5px;
+    }
+}
+
+.testimonial {
+    @include e(icon-block){
+        width: 95px;
+        height: 50px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+.slider3 {
+    display: grid;
+    grid-gap: 20px;
+    position: relative;
+    z-index: 1
+}
+
+.slider3 {
+    @include e(slide){
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.slider3 {
+    @include e(block){
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        padding: rem(20px);
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.slider3 {
+    @include e(p) {
+        font-size: 14px;
+        line-height: 22px;
+        color: gray;
+    }
+}
+
+.slider3 {
+    @include e(img-block) {
+        display: block;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 100px;
+        width: 130px;
+        height: 130px;
+        max-width: 130px;
+        align-items: center;
+    }
+}
+
+.slider3 {
+    @include e(img) {
+        object-fit: fill;
+        width: 100%;
+        max-width: 100%;
+        cursor: pointer;
+
+    }
+}
+
+.slider3 {
+    @include e(h3) {
+        font-family: $secondFontFamily;
+        margin-bottom: 0;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+}
+
+.slider3 {
+    @include e(post) {
+        font-size: 14px;
+        margin-top: 0;
+        font-weight: 400;    
+    }
+}
+

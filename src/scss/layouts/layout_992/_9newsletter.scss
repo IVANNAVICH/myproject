@@ -1,0 +1,48 @@
+.news {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news {
+    @include e(h3) {
+        font-size: 30px;
+        flex-basis: 50%;
+    }
+}
+
+.news {
+    @include e(form) {
+        height: 45px;
+        width: 310px;
+        max-width: 410px;
+        flex-basis: 50%;
+        margin-top: 30px;
+    }
+}
+
+.news {
+    @include e(h3) {
+       margin-top: 0;
+    }
+}
+
+.news {
+    @include e(p) {
+       padding-right: 120px;
+        margin-bottom: 0;
+    }
+}
+
+.news {
+    padding-bottom: 60px;
+    padding-top: 60px;
+   }
+
+   .news {
+    @include e(btn) {
+        @include h {
+            transition: transform 0.1s;
+            transform: scale(1.2);
+        }
+    }
+}

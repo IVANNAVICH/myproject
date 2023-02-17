@@ -1,0 +1,200 @@
+.slider1-cover{
+    position: relative;
+}
+
+.slide {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    // cursor: grab;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+.slide1 {
+    background: $black;
+    color: white;
+}
+
+.slide2 {
+    background: $white;
+    color: $black;
+}
+
+.slide3 {
+    background: $white;
+    color: $black;
+}
+
+.slide4 {
+    background: $white;
+    color: $black;
+}
+
+
+
+.slide__img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+    background-size: cover;
+    background-position:center;
+    position: absolute;
+    inset: 0;
+    z-index: 1; 
+}
+
+.slide__img-block768 {
+    display: none;
+}
+
+
+.slide {
+    @include e(p){
+        text-align: center;
+        margin: 50px 0 10px 0;
+        padding: 14px 0;
+        font-size: rem(12px);
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+}
+.slide {
+    @include e(h2){
+        color: $pizzaRed;
+        font-family: $secondFontFamily;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 0 0 10px 0;
+    }
+}
+
+.slide {
+    @include e(span){
+        @include m(h2){
+            color: $black;
+        }
+    }
+}
+.slide {
+    @include e(span){
+        @include m(h2-ylw){
+            color: $pizzaYellow;
+        }
+    }
+}
+
+    
+
+.slide {
+    @include e(h3){
+        font-size: rem(16px);
+        line-height: 20px;
+        color: $black;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 0 10px 0;
+    }
+}
+
+.slide {
+    @include e(span){
+        @include m(h3){
+        font-size: rem(15px);
+        color: $pizzaRed;
+        }
+    }
+}
+
+.slide {
+    @include e(button){
+        width: 120px;
+        border: 2px solid $pizzaYellow;
+        border-radius: 25px;
+        padding: 10px 24px;
+        margin: 15px auto 40px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+.slide {
+    @include e(a){
+        text-decoration: none;
+        color: $black;
+        font-family: $baseFontFamily;
+        font-size: rem(14px);
+        line-height: 20px;
+        
+        }
+}
+
+.button-w {
+    border: 2px solid $black;
+}
+
+.slide__swiper {
+    // margin: 24px 0 4px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+
+};
+
+
+.slide__swiper-span{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+.slide__swiper-span > li {
+    text-align: center;
+    margin-right: 5px;
+}
+
+.slide__swiper-span > li:last-of-type {
+    margin-right: 0;
+}
+
+.slide__swiper-span button {
+    cursor: pointer;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(189, 179, 179, 0.5);
+    border: 2px solid $pizzaYellow;
+    border-radius: 50%;
+}
+
+.slide__swiper-span button:focus {
+    outline: none;
+}
+
+.slide__swiper-span .slick-active button {
+    background: red;
+}
+
+
+
+// #slick-slide-control08{
+//     background: red;
+// }

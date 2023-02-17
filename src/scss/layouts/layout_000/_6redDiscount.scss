@@ -1,0 +1,57 @@
+.red-block {
+    display: block;
+    background: imageDesign("bg-2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+}
+
+.red-block {
+    @include e(text-block){
+    display: block;
+    text-align: center;
+    color: $white;
+    width: 70%;
+    margin: 0 auto;
+    }
+}
+
+.red-block {
+    @include e(h4){
+        font-family: $secondFontFamily;
+        font-size: rem(25px);
+        font-weight: 400;
+        margin: 25px 0;
+    }
+}
+
+.red-block {
+    @include e(h6){
+        font-family: $secondFontFamily;
+        font-size: rem(14px);
+        font-weight: 400;
+        margin: 25px 0;
+
+    }
+}
+
+.red-block {
+    @include e(p){
+        line-height: 28px;
+        margin-bottom: 2rem;
+    }
+}
+
+.red-block {
+    @include e(a){
+        display: block;
+        width: 170px;
+        text-decoration: none;
+        color: $white;
+        padding: 10px 20px;
+        margin: 0 auto 25px;
+        border: 5px double $white;
+        border-radius: 20px;
+    }
+}

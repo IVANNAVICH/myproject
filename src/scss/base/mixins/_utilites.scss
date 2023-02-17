@@ -2,6 +2,18 @@
   @return url($imagesPath + $file);
 }
 
+@function imageDesign($file) {
+  @return url($designImagesPath + $file);
+}
+
+@function imageProduct($file) {
+  @return url($productImagesPath + $file);
+}
+
+@function imageAsset($file) {
+  @return url($assetImagesPath + $file);
+}
+
 @function font($file) {
   @return url($fontsPath + $file);
 }
@@ -36,6 +48,18 @@
 
 @mixin m($modifier) {
   &_#{$modifier} {
+    @content;
+  }
+}
+
+@mixin h() {
+  &:hover {
+    @content;
+  }
+}
+
+@mixin f() {
+  &:focus {
     @content;
   }
 }

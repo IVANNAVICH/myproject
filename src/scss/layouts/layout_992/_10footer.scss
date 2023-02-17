@@ -1,0 +1,25 @@
+.foot {
+    gap: 30px;
+}
+
+.footblock {
+    width: 200px;
+    max-width: 200px;
+}
+
+.bottom {
+    @include e(icon){
+        @include h {
+            transition: all 0.2s;
+            transform: scale(1.2);
+        }
+    }
+}
+
+.footblock {
+    @include e(a){
+        @include h {
+            color: $pizzaYellow;
+        }
+    }   
+   }

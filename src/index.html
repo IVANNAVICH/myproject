@@ -5,18 +5,1002 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="shortcut icon" href = "https://cdn.shopify.com/s/files/1/0046/1615/9347/files/icon-4_16x16.png?v=1613572101" type = "image/png">
   <title>Pizza Home</title>
 </head>
 <body>
-  <h1>hello</h1>
+
+  <!-- OPEN DEALS +++++ -->
+  <div class="deal deal-btn">
+    
+    <div class="deal__btn-block">
+      <a href="#" class="deal__a">
+        <h3 class="deal__h3">Open Deals<span class="deal__plus">+</span></h3>
+      </a>
+    </div>
+    <div class="deal__img-block add-block">
+      <div class="deal__close-block"> 
+        <img class="deal__close" src="i/assets/cross.png">
+      </div>
+      <a href="#" class="deal__a">
+        <img src="i/design/deal-img.jpg" class="deal__img" />
+      </a>
+    </div>
+  </div>
+  <!-- ============ -->
+
+  <!-- mobile-menu -->
+  <div class="mobile-menu">
+
+    <a href="#" class="close-button">
+      <svg class="close-button__svg">
+      <use xlink:href="icons/cross.svg#close-icon-svg" />
+      </svg>
+    </a>
+
+    <nav class="mobile-navigation">
+      <ul>
+        <a class="is-submenu" href="#">Home</a>
+          <li class="has-submenu">
+              <a class="is-submenu" href="#">Pizza Menu</a>
+              <ul>
+                  <li class="has-submenu">
+                      <a class="is-submenu" href="#">Vegan menu</a>
+                      <ul class="hide-line">
+                          <li><a href="#">Margherita</a></li>
+                          <li><a href="#">Cheese Tomato</a></li>
+                          <li><a href="#">Sweet Heat</a></li>
+                          <li><a href="#">Spinach Pizza</a></li>
+                          <li><a href="#">Bella Italia</a></li>
+                          <li><a href="#">Onion Blossom</a></li>
+                      </ul>
+                  </li>
+                  <li class="has-submenu">
+                      <a class="is-submenu" href="#">Classic Pizza</a>
+                      <ul class="hide-line">
+                          <li><a href="#">Diablo</a></li>
+                          <li><a href="#">Gavai</a></li>
+                          <li><a href="#">Margarita</a></li>
+                          <li><a href="#">Pepperoni</a></li>
+                          <li><a href="#">Mario special</a></li>
+                          <li><a href="#">Four Cheese</a></li>
+                          <li><a href="#">Freestyle</a></li>
+                      </ul>
+                  </li>
+                  <li class="has-submenu">
+                      <a class="is-submenu" href="#">Breads</a>
+                      <ul class="hide-line">
+                          <li><a href="#">Garlic Bread</a></li>
+                          <li><a href="#">Super Slice</a></li>
+                          <li><a href="#">Bread Rolls</a></li>
+                          <li><a href="#">Sandwich</a></li>
+                          <li><a href="#">Multigrain</a></li>
+                          <li><a href="#">Ukraine bread</a></li>
+                          <li><a href="#">Baguette French stick</a></li>
+                      </ul>
+                  </li>
+                  <li class="has-submenu">
+                      <a class="is-submenu" href="#">Cakes</a>
+                      <ul class="hide-line">
+                          <li><a href="#">Kiwi</a></li>
+                          <li><a href="#">Black Forest</a></li>
+                          <li><a href="#">Blueberry</a></li>
+                          <li><a href="#">Chocochips</a></li>
+                          <li><a href="#">Milk Chockolate</a></li>
+                          <li><a href="#">Butterscotch</a></li>
+                          <li><a href="#">Orange</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+          <li class="has-submenu">
+              <a class="is-submenu" href="#">Shop</a>
+              <ul>
+                  <li><a href="#">
+                    <div class="shop-submenu-block">
+                      <img class="shop-submenu-img" src="i/products/product17.jpg">
+                      <div class="shop-sub-textblock">
+                        <h3 class="sub-h3">American Brewhouse King</h3>
+                        <span class="sub-span">4.99$</span>
+                      </div>
+                    </div>
+                  </a></li>
+                  <li><a href="#">
+                    <div class="shop-submenu-block">
+                      <img class="shop-submenu-img" src="i/products/product27.jpg">
+                      <div class="shop-sub-textblock">
+                        <h3 class="sub-h3">Bella Italia</h3>
+                        <span class="sub-span">9.99$</span>
+                      </div>
+                    </div>
+                  </a></li>
+                  <li><a href="#">
+                    <div class="shop-submenu-block">
+                      <img class="shop-submenu-img" src="i/products/product29.jpg">
+                      <div class="shop-sub-textblock">
+                        <h3 class="sub-h3">Diablo <img class="sub-he-img" src="i/assets/spicy.png"></h3>
+                        <span class="sub-span">12.99$</span>
+                      </div>
+                    </div>
+                  </a></li>
+                  <li><a href="#">Show more...</a></li>
+              </ul>
+          </li>
+          <li class="has-submenu">
+              <a class="is-submenu" href="#">Pages</a>
+              <ul>
+                  <li><a class="my-links" href="#footer">About Us</a></li>
+                  <li><a class="my-links" href="#footer">Contact Us</a></li>
+                  <li><a class="my-links" href="#blog">Blog</a></li>
+              </ul>
+          </li>
+      </ul>
+    </nav>
+  </div>
+  <!--END OF MOBILE MENU-->
+
+  <div class="dark-overlay"></div> <!-- for mobile-menu -->
+
+  <div class="container" id="top">
+
+   <header class="head">
+    <nav class="head__nav">
+      <div class="head__img-block">
+        <a href="#" class="head__logo-a">
+        <img class="head__logo" src="i/design/logo_300x300.png" />
+        </a>
+      </div>
+
+<!--Desktop-menu -->
+      <div class="menu">
+        <ul class="menu-desktop">
+            <li><a href="#">Home</a></li>
+            <li class="has-submenu">
+                <a href="#">Menu<span class="hvr-spn">v</span></a>
+                <ul class="menu-section menu-section1">
+                    <div class="menu__block">
+                        <a class="menu__main-a" href="#">Vegan Pizza</a>
+                        <hr>
+                        <ul class="menu__ul">
+                          <li class="menu__li"><a href="#">Margherita</a></li>
+                          <li class="menu__li"><a href="#">Cheese Tomato</a></li>
+                          <li class="menu__li"><a href="#">Sweet Heat</a></li>
+                          <li class="menu__li"><a href="#">Spinach Pizza</a></li>
+                          <li class="menu__li"><a href="#">Bella Italia</a></li>
+                          <li class="menu__li"><a href="#">Onion Blossom</a></li>
+                          <li class="menu__li"><a href="#">Flower Flavour</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__block">
+                        <a class="menu__main-a" href="#">Classic Pizza</a>
+                        <hr>
+                        <ul class="menu__ul">
+                          <li class="menu__li"><a href="#">Diablo</a></li>
+                          <li class="menu__li"><a href="#">Gavai</a></li>
+                          <li class="menu__li"><a href="#">Margarita</a></li>
+                          <li class="menu__li"><a href="#">Pepperoni</a></li>
+                          <li class="menu__li"><a href="#">Mario special</a></li>
+                          <li class="menu__li"><a href="#">Four Cheese</a></li>
+                          <li class="menu__li"><a href="#">Freestyle</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__block">
+                        <a class="menu__main-a" href="#">Breads</a>
+                        <hr>
+                        <ul class="menu__ul">
+                          <li class="menu__li"><a href="#">Garlic Bread</a></li>
+                          <li class="menu__li"><a href="#">Super Slice</a></li>
+                          <li class="menu__li"><a href="#">Bread Rolls</a></li>
+                          <li class="menu__li"><a href="#">Sandwich</a></li>
+                          <li class="menu__li"><a href="#">Multigrain</a></li>
+                          <li class="menu__li"><a href="#">Ukraine bread</a></li>
+                          <li class="menu__li"><a href="#">Baguette French stick</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__block">
+                        <a class="menu__main-a" href="#">Cakes</a>
+                        <hr>
+                        <ul class="menu__ul">
+                          <li class="menu__li"><a href="#">Kiwi</a></li>
+                          <li class="menu__li"><a href="#">Black Forest</a></li>
+                          <li class="menu__li"><a href="#">Blueberry</a></li>
+                          <li class="menu__li"><a href="#">Chocochips</a></li>
+                          <li class="menu__li"><a href="#">Milk Chockolate</a></li>
+                          <li class="menu__li"><a href="#">Butterscotch</a></li>
+                          <li class="menu__li"><a href="#">Orange</a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="#">Shop<span class="hvr-spn">v</span></a>
+                <ul class="menu-section menu-section2">
+                    <div class="shop-submenu-block">
+                      <div class="shop-img-block">
+                      <img class="shop-submenu-img" src="i/products/product17.jpg">
+                      </div>
+                      <div class="shop-sub-textblock">
+                        <h3 class="sub-h3">American Brewhouse King</h3>
+                        <span class="sub-span">4.99$</span>
+                      </div>
+                    </div>
+                    
+                    <div class="shop-submenu-block">
+                      <div class="shop-img-block">
+                      <img class="shop-submenu-img" src="i/products/product27.jpg">
+                      </div>
+                      <div class="shop-sub-textblock">
+                        <h3 class="sub-h3">Bella Italia</h3>
+                        <span class="sub-span">9.99$</span>
+                      </div>
+                    </div>
+                                      
+                    <div class="shop-submenu-block">
+                      <div class="shop-img-block">
+                      <img class="shop-submenu-img" src="i/products/product29.jpg">
+                      </div>
+                      <div class="shop-sub-textblock">
+                        <h3 class="sub-h3">Diablo <img class="sub-he-img desktop-spicy" src="i/assets/spicy.png"></h3>
+                        <span class="sub-span">12.99$</span>
+                      </div>
+                    </div>
+                    
+                    <div class="shop-submenu-block"><a href="#">Show more...</a></div>
+                </ul>
+            </li>
+            <li><a href="#arrivals">Pizza</a></li>
+            <li><a href="#">Beverages</a></li>
+            <li><a href="#">Snacks</a></li>
+            <li class="has-submenu">
+                <a href="#">Pages<span class="hvr-spn">v</span></a>
+                <ul class="menu-section menu-section3">
+                  <li class="menu__li"><a href="#">About Us</a></li>
+                  <li class="menu__li"><a href="#contact-us">Contact Us</a></li>
+                  <li class="menu__li"><a href="#blog">Blog</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+      </div>
+<!--END of Desktop-menu -->
+
+      <div class="head__menu-trigger">
+        <a href="#" class="menu-button in-mobile active">
+        <svg class="menu-trigger__svg svg-color">
+        <use xlink:href="icons/menu_icon.svg#menu-icon-svg" />
+        </svg>
+        <span class="head__menu-span">Menu</span>
+        </a>
+      </div>
+
+      
+
+      <div class="head-links">
+        <a href="#" class="head-links__cart-toggle">
+          <svg class="head-links__cart-svg svg-color">
+          <use xlink:href="icons/cart.svg#cart-svg" />
+          </svg>
+        </a>
+        <a href="#" class="head-links__search">
+          <svg class="head-links__search-svg svg-color">
+          <use xlink:href="icons/search.svg#search-svg" />
+          </svg>
+        </a>
+        <div class="head-links__select-currency">
+          <span class="head-links__selected-currency">
+            <p class="head-links__p">usd</p></span>
+          <span class="head-links__select-icon">
+            <svg class="head-links__triangle-svg svg-color">
+              <use xlink:href="icons/triangle.svg#triangle-svg" />
+            </svg>
+          </span>
+        </div>
+        <a href="#" class="head-links__user">
+          <svg class="head-links__user-svg svg-color">
+          <use xlink:href="icons/user.svg#user-svg" />
+          </svg>
+        </a>
+      </div>
+    </nav>
+   </header>
+
+   
+
+   <main class="content">
+    <div class="slider1-cover">
+    <div class="slider1" id="slider1">
+    <div class="slide slide1">
+      <div class="slide__img-block">
+        <img class="slide__img" src="i/sliders/slider1/pizza-slide1_1.jpg" />
+      </div>
+      <div class="slide__img-block768">
+        <img class="slide__img768" src="i/sliders/slider1/bg1_768.jpg" />
+      </div>
+      <div class="slider1__text-block  slider1__text-block-b">
+      <p class="slide__p">Get Free Garlic Bread</p>
+      <h2 class="slide__h2">double the cheese,<br>
+      <span class="slide__span_h2-ylw">double the fun</span>
+      </h2>
+      <h3 class="slide__h3" style="color: white;">buy one regular & <br>
+      <span class="slide__span_h3">get one free</span>
+      </h3>
+      <label for="slide-a" class="slide__button">
+        <a href="#slider2" id="slide-a" class="slide__a" style="color: white;">Shop Now</a>
+      </label>
+    </div>
+    </div>
+
+    <div class="slide slide2">
+      <div class="slide__img-block">
+        <img class="slide__img" src="i/sliders/slider1/pizza-slide1_2.jpg" />
+      </div>
+      <div class="slide__img-block768">
+        <img class="slide__img768" src="i/sliders/slider1/bg2_768.jpg" />
+      </div>
+      <div class="slider1__text-block slider1__text-block-w">
+
+      <p class="slide__p">20.05 - 31.06</p>
+      <h2 class="slide__h2">Special Deal<br>
+      <span class="slide__span_h2">For The First Buy</span>
+      </h2>
+      <h3 class="slide__h3">Order for over 20$ <br>
+      <span class="slide__span_h3">Get Free Delivery</span>
+      </h3>
+      <label for="slide-a" class="slide__button button-w">
+        <a href="#slider2" id="slide-a" class="slide__a">Shop Now</a>
+      </label>
+      </div>
+    </div>
+
+    <div class="slide slide3">
+      <div class="slide__img-block">
+        <img class="slide__img" src="i/sliders/slider1/pizza-slide1_3.jpg" />
+      </div>
+      <div class="slide__img-block768">
+        <img class="slide__img768" src="i/sliders/slider1/bg3_768.jpg" />
+      </div>
+      <div class="slider1__text-block">
+      <p class="slide__p">Limited Time Only</p>
+      <h2 class="slide__h2">every day offers!<br>
+      <span class="slide__span_h2">more way to eat</span>
+      </h2>
+      <h3 class="slide__h3">get any two pizzas worth<br>
+      <span class="slide__span_h3">$ 9.99 each</span>
+      </h3>
+      <label for="slide-a" class="slide__button button-w">
+        <a href="#slider2" id="slide-a" class="slide__a">Shop Now</a>
+      </label>
+      </div>
+
+    </div>
 
 
+    <div class="slide slide4">
+      <div class="slide__img-block">
+        <img class="slide__img" src="i/sliders/slider1/pizza-slide1_4.jpg" />
+      </div>
+      <div class="slide__img-block768">
+        <img class="slide__img768" src="i/sliders/slider1/bg4_768.jpg" />
+      </div>
+      <div class="slider1__text-block">
+      <p class="slide__p">Chicken Cheesy Bytes</p>
+      <h2 class="slide__h2">Hot Spicy Chicken!<br>
+      <span class="slide__span_h2">Only this Summer</span>
+      </h2>
+      <h3 class="slide__h3">buy one regular & <br>
+      <span class="slide__span_h3">get one free</span>
+      </h3>
+      <label for="slide-a" class="slide__button button-w">
+        <a href="#slider2" id="slide-a" class="slide__a">Shop Now</a>
+      </label>
+      </div>
+
+    </div>
+
+    </div>
+      <div class="slide__swiper"></div>
+    </div>
+
+    <div class="welcome">
+      <div class="welcome__img-block">
+        <img class="welcome__img-main" src="i/design/img-2_1.jpg" >
+      </div>
+
+      <div class="welcome__text-block">
+        <div class="welcome__block-h4">
+          <h4 class="welcome__h4">Welcome to Pizza House</h4>
+        </div>
+
+        <div class="welcome__icon-block">
+          <a href="#" class="welcome__link">
+              <img src="i/design/icon-1_1.png" alt="" class="welcome__icon">
+          </a>
+        </div>
+        <div class="welcome__icon-block">
+          <a href="#" class="welcome__link">
+              <img src="i/design/icon-1_2.png" alt="" class="welcome__icon">
+          </a>
+        </div>
+        <div class="welcome__icon-block">
+          <a href="#" class="welcome__link">
+              <img src="i/design/icon-1_3.png" alt="" class="welcome__icon">
+          </a>
+        </div>
+
+        <div class="welcome__p-block">
+          <p class="welcome-p">Our chefs are working 24/7 and are ready to accept visitors and at any time of the day and night</p>
+          <a href="#" class="welcome__collection-btn">View all collection</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="welcome-white">
+      <div class="welcome-white__img-block1">
+        <a href="#" class="welcome-white__link">
+         <img class="welcome-white__img" src="i/design/img2-1_600x.webp" />
+        </a>
+      </div>
+
+      <div class="welcome-white__img-block2">
+        <a href="#" class="welcome-white__link">
+          <img class="welcome-white__img" src="i/design/img2-2_600x.webp" />
+        </a>
+      </div>
+    </div>
+
+    <div class="arrivals" id="arrivals">
+      <div class="arrivals__new">
+        <h2 class="arrivals__h2">New <span class="arrivals__h2-span">Arrivals</span></h2>
+        <div class="arrivals__icon-block">
+          <img class="arrivals__icon" src="i/design/arr-icon.png" />
+        </div>
+        <div class="arrivals__tab-block">
+          <div class="arrivals__tab">Chicken</div>
+          <div class="arrivals__tab">Mushrooms</div>
+          <div class="arrivals__tab">Bacon</div>
+        </div>
+      </div>
+
+      <div class="slider2" id="slider2" >
+        <div class="slider2__slide slider2__slide_1">
+          <div class="slider2__multi-block">
+            <div class="slider2__single-block">
+              <div class="slider2__img-block">
+                <img class="slider2__img" src="i/sliders/slider2/slider2_p1.jpg" />
+              </div>
+              <div class="slider2__text-block">
+                <a href="#" class="slider2__a">Delicious pizza №1</a>
+                <h3 class="slider2__span">$8.99</h3>
+                <a class="slider2__add-btn" href="#">Add To Card<span class="slider2__icon-btn"></span></a>
+                <!-- <button class="non">Add To Card<img class="non-img" src="i/assets/card.png"></button> -->
+              </div>
+            </div>
+            <div class="slider2__single-block">
+              <div class="slider2__img-block">
+                <img class="slider2__img" src="i/sliders/slider2/slider2_p2.jpg" />
+              </div>
+              <div class="slider2__text-block">
+                <a href="#" class="slider2__a">Delicious pizza №2</a>
+                <h3 class="slider2__span">$9.99</h3>
+                <a class="slider2__add-btn" href="#">Add To Card<span class="slider2__icon-btn"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider2__slide slider2__slide_2">
+          <div class="slider2__multi-block">
+            <div class="slider2__single-block">
+              <div class="slider2__img-block">
+                <img class="slider2__img" src="i/sliders/slider2/slider2_p3.jpg" />
+              </div>
+              <div class="slider2__text-block">
+                <a href="#" class="slider2__a">Delicious pizza №3</a>
+                <h3 class="slider2__span">$11.99</h3>
+                <a class="slider2__add-btn" href="#">Add To Card<span class="slider2__icon-btn"></span></a>
+              </div>
+            </div>
+            <div class="slider2__single-block">
+              <div class="slider2__img-block">
+                <img class="slider2__img" src="i/sliders/slider2/slider2_p4.jpg" />
+              </div>
+              <div class="slider2__text-block">
+                <a href="#" class="slider2__a">Delicious pizza №4</a>
+                <h3 class="slider2__span">$9.99</h3>
+                <a class="slider2__add-btn" href="#">Add To Card<span class="slider2__icon-btn"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="slider2__slide slider2__slide_3">
+          <div class="slider2__multi-block">
+            <div class="slider2__single-block">
+              <div class="slider2__img-block">
+                <img class="slider2__img" src="i/sliders/slider2/slider2_p5.jpg" />
+              </div>
+              <div class="slider2__text-block">
+                <a href="#" class="slider2__a">Delicious pizza №5</a>
+                <h3 class="slider2__span">$15.99</h3>
+                <a class="slider2__add-btn" href="#">Add To Card<span class="slider2__icon-btn"></span></a>
+              </div>
+            </div>
+            <div class="slider2__single-block">
+              <div class="slider2__img-block">
+                <img class="slider2__img" src="i/sliders/slider2/slider2_p6.jpg" />
+              </div>
+              <div class="slider2__text-block">
+                <a href="#" class="slider2__a">Delicious pizza №6</a>
+                <h3 class="slider2__span">$7.99</h3>
+                <a class="slider2__add-btn" href="#">Add To Card<span class="slider2__icon-btn"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider2__slide slider2__slide_4">
+          <div class="slider2__multi-block">
+            <div class="slider2__single-block">
+              <div class="slider2__img-block">
+                <img class="slider2__img" src="i/sliders/slider2/slider2_p7.jpg" />
+              </div>
+              <div class="slider2__text-block">
+                <a href="#" class="slider2__a">Delicious pizza №7</a>
+                <h3 class="slider2__span">$8.99</h3>
+                <a class="slider2__add-btn" href="#">Add To Card<span class="slider2__icon-btn"></span></a>
+              </div>
+            </div>
+            <div class="slider2__single-block">
+              <div class="slider2__img-block">
+                <img class="slider2__img" src="i/sliders/slider2/slider2_p8.jpg" />
+              </div>
+              <div class="slider2__text-block">
+                <a href="#" class="slider2__a">Delicious pizza №8</a>
+                <h3 class="slider2__span">$11.99</h3>
+                <a class="slider2__add-btn" href="#">Add To Card<span class="slider2__icon-btn"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider2__slide slider2__slide_5">
+          <div class="slider2__multi-block">
+            <div class="slider2__single-block">
+              <div class="slider2__img-block">
+                <img class="slider2__img" src="i/sliders/slider2/slider2_p9.jpg" />
+              </div>
+              <div class="slider2__text-block">
+                <a href="#" class="slider2__a">Delicious pizza №9</a>
+                <h3 class="slider2__span">$12.99</h3>
+                <a class="slider2__add-btn" href="#">Add To Card<span class="slider2__icon-btn"></span></a>
+              </div>
+            </div>
+            <div class="slider2__single-block">
+              <div class="slider2__img-block">
+                <img class="slider2__img" src="i/sliders/slider2/slider2_p10.jpg" />
+              </div>
+              <div class="slider2__text-block">
+                <a href="#" class="slider2__a">Delicious pizza №10</a>
+                <h3 class="slider2__span">$8.99</h3>
+                <a class="slider2__add-btn" href="#">Add To Card<span class="slider2__icon-btn"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider2__slide slider2__slide_6">
+          <div class="slider2__multi-block">
+            <div class="slider2__single-block">
+              <div class="slider2__img-block">
+                <img class="slider2__img" src="i/sliders/slider2/slider2_p11.jpg" />
+              </div>
+              <div class="slider2__text-block">
+                <a href="#" class="slider2__a">Delicious burger №1</a>
+                <h3 class="slider2__span">$4.99</h3>
+                <a class="slider2__add-btn" href="#">Add To Card<span class="slider2__icon-btn"></span></a>
+              </div>
+            </div>
+            <div class="slider2__single-block">
+              <div class="slider2__img-block">
+                <img class="slider2__img" src="i/sliders/slider2/slider2_p12.jpg" />
+              </div>
+              <div class="slider2__text-block">
+                <a href="#" class="slider2__a">Delicious burger №2</a>
+                <h3 class="slider2__span">$3.99</h3>
+                <a class="slider2__add-btn" href="#">Add To Card<span class="slider2__icon-btn"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider2__buttons"></div>
+
+    </div>
+
+    <div class="red-block">
+      <div class="red-block__text-block">
+        <h4 class="red-block__h4">Discount For All Orders Over $100</h4>
+        <h6 class="red-block__h6">We're at 71% of our goal!</h6>
+        <p class="red-block__p">That's $56,715.00 USD pledged of our $79,600.00 USD target! Estimated delivery: April 14-24</p>
+        <a class="red-block__a" href="#">View more</a>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <h2 class="testimonial__h2">Testimonials</h2>
+        <div class="testimonial__icon-block">
+          <img class="testimonial__icon" src="i/design/arr-icon.png" />
+        </div>
+        <div class="slider3" id="slider3">
+          <div class="slider3__slide slider3__slide_1">
+            <div class="slider3__block">
+            <p class="slider3__p">Minima fugit veniam aliquid modi architecto, praesentium sint, soluta, quasi dicta eveniet perspiciatis fugiat nemo vel? Eum nemo facere laboriosam autem neque!
+            </p>
+            <div class="slider3__img-block">
+              <img class="slider3__img" src="i/sliders/slider3/ivan.jpg" />
+            </div>
+            <h3 class="slider3__h3">Ivan</h3>
+            <p class="slider3__post">Developer</p>
+          </div>
+          </div>
+
+          <div class="slider3__slide slider3__slide_2">
+            <div class="slider3__block">
+            <p class="slider3__p">Minima fugit veniam aliquid modi architecto, praesentium sint, soluta, quasi dicta eveniet perspiciatis fugiat nemo vel? Eum nemo facere laboriosam autem neque!
+            </p>
+            <div class="slider3__img-block">
+              <img class="slider3__img" src="i/sliders/slider3/step.jpg" />
+            </div>
+            <h3 class="slider3__h3">Stepan</h3>
+            <p class="slider3__post">Quality Tester</p>
+          </div>
+          </div>
+
+          <div class="slider3__slide slider3__slide_3">
+            <div class="slider3__block">
+            <p class="slider3__p">Minima fugit veniam aliquid modi architecto, praesentium sint, soluta, quasi dicta eveniet perspiciatis fugiat nemo vel? Eum nemo facere laboriosam autem neque!
+            </p>
+            <div class="slider3__img-block">
+              <img class="slider3__img" src="i/sliders/slider3/ser.jpg" />
+            </div>
+            <h3 class="slider3__h3">Serhiy</h3>
+            <p class="slider3__post">Designer</p>
+          </div>
+          </div>
+
+          <div class="slider3__slide slider3__slide_4">
+            <div class="slider3__block">
+            <p class="slider3__p">Minima fugit veniam aliquid modi architecto, praesentium sint, soluta, quasi dicta eveniet perspiciatis fugiat nemo vel? Eum nemo facere laboriosam autem neque!
+            </p>
+            <div class="slider3__img-block">
+              <img class="slider3__img" src="i/sliders/slider3/zho.jpg" />
+            </div>
+            <h3 class="slider3__h3">Zhozho</h3>
+            <p class="slider3__post">Graphic Designer</p>
+          </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="blog" id="blog">
+      <h2 class="blog__h2">Blog <span class="blog__h2-span">Post</span></h2>
+      <div class="blog__icon-block">
+        <img class="blog__icon" src="i/design/arr-icon.png" />
+      </div>
+      <div class="blog__flex-block">
+      <div class="blog__item1">
+      <div class="blog__container">
+        <div class="blog__img-block">
+          <span class="blog__hearts">&hearts;</span>
+          <img class="blog__img" src="i/design/blog1.jpg">
+        </div>
+        <h3 class="blog__h3">Party started with Pizza</h3>
+        <p class="blog__p-joke">-What did all the pizzas say to the pizza maker? Answer: Cheeesus!</p>
+      </div>
+    </div>
+
+    <div class="blog__item2">
+      <div class="blog__container">
+        <div class="blog__img-block">
+          
+          <span class="blog__hearts">&hearts;</span>
+          
+          <img class="blog__img" src="i/design/blog2.jpg">
+        </div>
+        <h3 class="blog__h3">Juice and Spice Pizza Duo</h3>
+        <p class="blog__p">Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum hic adipisci ut doloremque omnis velit ipsam!</p>
+      </div>
+    </div>
+      
+    <div class="blog__item3">
+      <div class="blog__container">
+        <div class="blog__img-block">
+          
+          <span class="blog__hearts">&hearts;</span>
+          
+          <img class="blog__img" src="i/design/blog3.jpg">
+        </div>
+        <h3 class="blog__h3">Enlarge Chicken Burger</h3>
+        <p class="blog__p">Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aliquam omnis distinctio excepturi sed?</p>
+      </div>
+    </div>
+  </div>
+    <a href="#" class="blog__btn-more">Read more</a>
+    </div>
+    
+    <div class="news">
+      <div class="news__img-block">
+        <img src="i/design/footer-logo.png" class="news__img">
+      </div>
+      <div class="new__text-block">
+      <h3 class="news__h3">🎁 Newsletter 🎁</h3>
+      <p class="news__p">Let us know, if you'd like weekly pizza deals, leave your email below to receive exclusive promotions 🍕</p>
+      </div>
+      <form class="news__form" method="post">
+        <input class="news__input" type="email" placeholder="Your email address" required/>
+        <button class="news__btn" type="submit">Sign Up</button>
+      </form>
+    </div>
+    
+   </main>
+
+   <footer class="footer" id="footer">
+    <div class="foot">
+      <div class="footblock">
+        <p class="footblock__p">Get the best Pizza made to taste better and linger the memories in your mouth. Create a menu and serve yourself the best pizza in your area.</p>
+      </div>
+      <div class="footblock">
+        <h5 class="footblock__h5">Help</h5>
+        <ul class="footblock__ul">
+          <li class="footblock__li">
+            <a href="#" class="footblock__a">Search</a>
+          </li>
+          <li class="footblock__li">
+            <a href="#" class="footblock__a">Help</a>
+          </li>
+          <li class="footblock__li">
+            <a href="#" class="footblock__a">Information</a>
+          </li>
+          <li class="footblock__li">
+            <a href="#" class="footblock__a">Privacy Policy</a>
+          </li>
+          <li class="footblock__li">
+            <a href="#" class="footblock__a">Shipping Details</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footblock" id="contact-us">
+        <h5 class="footblock__h5">Support</h5>
+        <ul class="footblock__ul">
+          <li class="footblock__li">
+            <a href="#" class="footblock__a">Contact Us</a>
+          </li>
+          <li class="footblock__li">
+            <a href="#" class="footblock__a">About Us</a>
+          </li>
+          <li class="footblock__li">
+            <a href="#" class="footblock__a">Careers</a>
+          </li>
+          <li class="footblock__li">
+            <a href="#" class="footblock__a">Refunds & Returns</a>
+          </li>
+          <li class="footblock__li">
+            <a href="#" class="footblock__a">Deliveries</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footblock">
+        <h5 class="footblock__h5">Inforamtion</h5>
+        <ul class="footblock__ul">
+          <li class="footblock__li">
+            <a href="#" class="footblock__a">Search Terms</a>
+          </li>
+          <li class="footblock__li">
+            <a href="#" class="footblock__a">Advanced Search</a>
+          </li>
+          <li class="footblock__li">
+            <a href="#" class="footblock__a">Help & FAQ's</a>
+          </li>
+          <li class="footblock__li">
+            <a href="#" class="footblock__a">Store Location</a>
+          </li>
+          <li class="footblock__li">
+            <a href="#" class="footblock__a">Orders & Returns</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footblock">
+        <h5 class="footblock__h5">Contact Us</h5>
+        <ul class="footblock__ul">
+          <li class="footblock__li">
+            <a href="#" class="footblock__a">
+              <span class="material-symbols-outlined">
+                home
+                </span>
+                No: 58 A, East Madison Street, Baltimore, MD, USA 4508</a>
+          </li>
+          <li class="footblock__li">
+            <span class="material-symbols-outlined">
+              call
+              </span>
+            <a href="#" class="footblock__a a-yellow">
+              
+              0123456789</a>
+          </li>
+          <li class="footblock__li">
+            <a href="#" class="footblock__a">
+              <span class="material-symbols-outlined">
+                mail
+                </span>
+                support@example.com</a>
+          </li>
+        
+        </ul>
+      </div>
+
+    </div>
+    <div class="bottom">
+      <p class="bottom__p">© 2023 Mario's Pizza Inc.</p>
+    
+    <div class="bottom__block">
+      <ul class="bottom__icons">
+        <li class="bottom__icon">
+          <a href="#" class="bottom__a">
+            <svg class="bottom__svg">
+              <use xlink:href="icons/twitter.svg#twitter-svg" />
+            </svg>
+          </a>
+        </li>
+        <li class="bottom__icon">
+          <a href="#" class="bottom__a">
+            <svg class="bottom__svg">
+              <use xlink:href="icons/facebook.svg#facebook-svg" />
+            </svg>
+          </a>
+        </li>
+        <li class="bottom__icon">
+          <a href="#" class="bottom__a">
+            <svg class="bottom__svg">
+              <use xlink:href="icons/pinterest.svg#pinterest-svg" />
+            </svg>
+          </a>
+        </li>
+        <li class="bottom__icon">
+          <a href="#" class="bottom__a">
+            <svg class="bottom__svg">
+              <use xlink:href="icons/google-plus.svg#google-svg" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+   </footer>
+
+
+  </div>
 
 
 
   
+
+</div>
+<a href="#top" class="rewind-btn"></a>
+
+
+
+  <!-- JavaScript here -->
   <!-- <script src="js/app.js"></script> -->
-    <!-- <script src="js/script.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/smooth-scroll.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
+
+
+  
+  
+<!-- Desktop-menu -->
+<!-- <div class="menu">
+  <ul class="menu-desktop">
+      <li><a href="#">Home</a></li>
+      <li class="has-submenu">
+          <a href="#">Menu<span class="hvr-spn">v</span></a>
+          <ul>
+              <li class="has-submenu">
+                  <a href="#">Vegan menu</a>
+                  <ul>
+                    <li class="lvl"><a href="#">Margherita</a></li>
+                    <li class="lvl"><a href="#">Cheese Tomato</a></li>
+                    <li class="lvl"><a href="#">Sweet Heat</a></li>
+                    <li class="lvl"><a href="#">Spinach Pizza</a></li>
+                    <li class="lvl"><a href="#">Bella Italia</a></li>
+                    <li class="lvl"><a href="#">Onion Blossom</a></li>
+                  </ul>
+              </li>
+              <li class="has-submenu">
+                  <a href="#">Classic Pizza</a>
+                  <ul>
+                    <li><a href="#">Diablo</a></li>
+                    <li><a href="#">Gavai</a></li>
+                    <li><a href="#">Margarita</a></li>
+                    <li><a href="#">Pepperoni</a></li>
+                    <li><a href="#">Mario special</a></li>
+                    <li><a href="#">Four Cheese</a></li>
+                    <li><a href="#">Freestyle</a></li>
+                  </ul>
+              </li>
+              <li class="has-submenu">
+                  <a href="#">Breads</a>
+                  <ul>
+                    <li><a href="#">Garlic Bread</a></li>
+                    <li><a href="#">Super Slice</a></li>
+                    <li><a href="#">Bread Rolls</a></li>
+                    <li><a href="#">Sandwich</a></li>
+                    <li><a href="#">Multigrain</a></li>
+                    <li><a href="#">Ukraine bread</a></li>
+                    <li><a href="#">Baguette French stick</a></li>
+                  </ul>
+              </li>
+              <li class="has-submenu last-sub">
+                  <a href="#">Cakes</a>
+                  <ul>
+                    <li><a href="#">Kiwi</a></li>
+                    <li><a href="#">Black Forest</a></li>
+                    <li><a href="#">Blueberry</a></li>
+                    <li><a href="#">Chocochips</a></li>
+                    <li><a href="#">Milk Chockolate</a></li>
+                    <li><a href="#">Butterscotch</a></li>
+                    <li><a href="#">Orange</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </li>
+      <li class="has-submenu">
+          <a href="#">Shop<span class="hvr-spn">v</span></a>
+          <ul>
+              <li><a href="#"><div class="shop-submenu-block">
+                <img class="shop-submenu-img" src="i/products/product17.jpg">
+                <div class="shop-sub-textblock">
+                  <h3 class="sub-h3">American Brewhouse King</h3>
+                  <span class="sub-span">4.99$</span>
+                </div>
+              </div></a></li>
+              <li><a href="#">
+                <div class="shop-submenu-block">
+                  <img class="shop-submenu-img" src="i/products/product27.jpg">
+                  <div class="shop-sub-textblock">
+                    <h3 class="sub-h3">Bella Italia</h3>
+                    <span class="sub-span">9.99$</span>
+                  </div>
+                </div>
+              </a></li>
+              <li><a href="#">
+                <div class="shop-submenu-block">
+                  <img class="shop-submenu-img" src="i/products/product29.jpg">
+                  <div class="shop-sub-textblock">
+                    <h3 class="sub-h3">Diablo <img class="sub-he-img" src="i/assets/spicy.png"></h3>
+                    <span class="sub-span">12.99$</span>
+                  </div>
+                </div>
+              </a></li>
+              <li><a href="#">Show more...</a></li>
+          </ul>
+      </li>
+      <li><a href="#arrivals">Pizza</a></li>
+      <li><a href="#">Beverages</a></li>
+      <li><a href="#">Snacks</a></li>
+      <li class="has-submenu">
+          <a href="#">Pages<span class="hvr-spn">v</span></a>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+      </li>
+      
+  </ul>
+</div> -->

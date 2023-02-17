@@ -1,0 +1,194 @@
+.menu-button {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    justify-self: center;
+
+  }
+  
+  .menu-desktop {
+    display: flex;
+    position: relative;
+    list-style-type: none;
+    max-width: 100%;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .menu > ul > li > a {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    padding: 12px 18px;  
+  }
+
+  .menu > ul > li > a {
+    @include h {
+      color: $pizzaYellow
+    } 
+  }
+
+  .hvr-spn {
+    font-size: 12px;
+    padding-left: 5px;
+  }
+  
+  .menu li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+
+  }
+  
+  .menu li ul a {
+    display: block;
+    padding: 0.5rem 1.4rem;
+    color: $black;  
+  }
+
+  .menu-section {
+    opacity: 0;
+    visibility: hidden;
+    float: left;
+    display: flex;
+    position: absolute;
+    transition: all 400ms ease;
+    z-index: 10000;
+    background-color: $white;
+    box-shadow: $hugeBoxShadow;
+  }
+
+  //Menu
+
+  .menu-section1 {
+    top: 150%;
+    left: -100%;
+    width: 623px;
+    padding: 1rem 0;
+    
+  }
+
+  .menu__block {
+    width: 25%;
+    padding: 0 5px;
+    text-align: center;
+  }
+
+  .menu__block:hover {
+    background-color: $bgWhite;
+  }
+
+  .menu__main-a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    
+  }
+
+  .menu {
+    @include e(main-a){
+      @include h {
+        transform: scale(1.1);
+        color: $pizzaRed;
+        transition: transform .3s;
+      }
+    }
+  }
+
+//Shop
+
+  .menu-section2 {
+    top: 150%;
+    left: -360%;
+    width: 900px;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .shop-submenu-block {
+    width: 300px;
+    background-color: $white;
+  } 
+      
+  .shop-img-block {
+    width: 90%;
+    cursor: pointer;
+    border-bottom: 4px solid $white;
+
+  }
+
+  .shop-submenu-block:last-of-type {
+    border-left: 2px solid $pizzaRed;
+    border-right: 2px solid $pizzaRed;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .shop-submenu-block:last-of-type a {
+    @include h{
+      color: $pizzaRed;
+      transition: all 0.2s;
+      transform: scale(1.2);
+    }
+  }
+
+  .shop-img-block {
+    @include h{
+      border-bottom: 4px solid $pizzaRed;
+      transition: all 0.2s;
+      transform: scale(0.9);
+    }
+
+  }
+
+  .shop-submenu-img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  
+  .sub-h3 {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  .desktop-spicy {
+    width: 12px;
+    height: 12px;
+  }
+
+//Pages
+
+  .menu-section3 {
+    flex-direction: column;
+    top: 150%;
+    left: 0;
+    width: 128px;
+    margin: 0;
+    padding: 1rem 0;
+  }
+
+  
+
+  .menu__li {
+    font-size: 14px;
+    padding: 6px 0;
+  }
+ 
+  .menu__li a:hover {
+        transition: all 300ms ease;
+        color: $pizzaRed;
+      }
+

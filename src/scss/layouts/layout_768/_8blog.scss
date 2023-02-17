@@ -1,0 +1,21 @@
+.blog__flex-block{
+    display: flex;
+    gap: 20px;
+    }
+    
+.blog {
+        @include e(item1){
+    flex-basis: 33%;
+        }
+    }
+    
+.blog {
+        @include e(item2){
+    flex-basis: 33%;
+        }
+    }
+
+.blog__item3 {
+    display: block;
+    flex-basis: 33%;
+    }

@@ -1,14 +1,179 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   @include getCssVar(font-size);
+    scroll-behavior: smooth;
+
 }
 
 body {
   @include getCssVar(font-family);
   font-size: 1rem;
+  font-weight: 400;
+  min-height: 100vh;
 }
 
 .container {
   width: 100%;
   max-width: 100%;
-  margin: auto;
+  margin: 0 auto;
+  background-color: $black;
+  display: block;
+}
+
+.content {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+// REWIND BTN
+.rewind-btn {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(254, 197, 36, 0.4);
+  border-radius: 48px;
+  position: fixed;
+  bottom: 40px;
+  right: 12px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.rewind-btn::before{
+  content: "\2191";
+  color: $pizzaRed;
+  font-size: 30px;
+}
+
+// SCROLL
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+  background: $bgWhite;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, $pizzaYellow 0%, $pizzaRed 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  border-radius: 100px;
+}
+
+//DEAL =====
+
+.deal {
+  position: fixed;
+  right: 0;
+  top: 120px;
+  z-index: 100000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  opacity: 1;
+  visibility: visible;
+}
+
+.deal__close-block {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 13px;
+  top: 61px;
+}
+
+.deal.visible {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .6s, visibility .6s;
+}
+
+.deal {
+  @include e(a) {
+    cursor: pointer;
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+.deal {
+  @include e(btn-block) {
+    display: block;
+    width: 165px;
+    height: 40px;
+    background-color: $pizzaYellow;
+    margin-bottom: 10px;
+    animation: pulse 1s infinite;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.85);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.85);
+  }
+  100% {
+    transform: scale(1);
+  }
+  
+}
+
+.deal {
+  @include e(h3) {
+    margin: 0;
+    padding-left: 8px;
+    margin-top: 5px;
+    font-family: $secondFontFamily;
+  }
+}
+
+.deal {
+  @include e(plus) {
+    padding-left: 2rem;
+    vertical-align: -2px;
+    font-size: 1.6rem;
+  }
+}
+
+.deal {
+  @include e(img-block) {
+    width: 250px;
+    max-width: fit-content;
+    display: none;
+  }
+}
+
+.deal__img-block.visible {
+  display: block;
+
+}
+
+.deal {
+  @include e(img) {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
 }

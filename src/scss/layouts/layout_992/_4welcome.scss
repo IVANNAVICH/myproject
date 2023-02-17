@@ -1,0 +1,36 @@
+.welcome {
+    @include e(icon-block){
+        @include h {
+            transform: scale(1.2);
+            transition: transform .2s;
+            background-color: $pizzaYellow;
+        }
+    }
+}
+
+.welcome {
+    @include e(collection-btn){
+        @include h {
+            background-color: $pizzaYellow;
+        }
+    }
+}
+
+.welcome-white {
+    @include e(img-block1){
+        @include h {
+            transform: rotate(2deg);
+        }
+    }
+}
+
+.welcome-white {
+    @include e(img-block2){
+        @include h {
+            transition: transform 0.2s;
+            transform: rotate(-2deg);
+        }
+    }
+}
+
+

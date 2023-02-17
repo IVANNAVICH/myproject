@@ -1,0 +1,139 @@
+//SVG preferences 
+.svg-color {
+    color: white;
+  }
+
+  .menu-trigger__svg {
+    width: 25px;
+   height: 25px;
+   vertical-align: -2px;
+  }
+
+  .close-button__svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .head-links {
+    @include e(cart-svg){
+      width: 20px;
+      height: 16px;
+    }
+  }
+  
+  .head-links {
+    @include e(search-svg){
+      width: 20px;
+      height: 16px;
+    }
+  }
+
+  .head-links {
+    @include e(triangle-svg){
+      width: 8px;
+      height: 5px;
+      transform: rotate(180deg);
+      vertical-align: 2px;
+    }
+  }
+  
+  .head-links {
+    @include e(user-svg){
+      width: 20px;
+      height: 16px;
+    }
+  }
+// =============================
+
+  .head {
+    background-color: rgba(0, 0, 0, 0.9);
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 5px 0;
+    position: sticky;
+    top: 0;
+    z-index: 11;
+    box-shadow: 0 2px 5px $black;
+  }
+
+  .head {
+    @include e(nav) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0 10%;
+    }
+  }
+  
+  .head {
+    @include e(img-block) {
+      display: block;
+      padding: 5px;
+      flex-basis: 86%;
+      margin-right: auto;
+      max-width: 50%;
+    }
+  }
+  
+  
+  .head {
+    @include e(menu-trigger) {
+      display: block;
+      align-self: center;
+      text-align: center;
+      flex-basis: 14%;
+    }
+  }
+
+  .head-links {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .head-links {
+    @include e(cart-toggle){
+      display: flex;
+      padding: 0 5px;
+    }
+  }
+  
+  .head-links {
+    @include e(search){
+      display: flex;
+      padding: 0 5px;
+    }
+  }
+
+  .head-links {
+    @include e(select-currency) {
+      color: $white;
+      text-transform: uppercase;
+      padding: 0 8px;
+    }
+  }
+
+  .head-links {
+    @include e(p){
+      display: inline;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      top: 1px;
+    }
+  }
+
+  .head-links {
+    @include e(user){
+      display: flex;
+      padding: 0 5px;
+    }
+  }
+
+  .head {
+    @include e(menu-span){
+        display: none;
+    }
+}

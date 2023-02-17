@@ -1,0 +1,54 @@
+.arrivals {
+    @include e(tab){
+        @include h {
+            transform: scale(1.2);
+      background-color: $pizzaYellow;
+      transition: transform .1s;
+      cursor: pointer;
+        }
+    }
+}
+
+.slider2 {
+    @include e(img){
+        @include h {
+            transform: scale(1.3);
+        background-color: $pizzaYellow;
+        transition: transform .1s;
+        cursor: pointer;
+        }
+    }
+}
+
+.slider2 {
+    @include e(add-btn){
+        @include h {
+            transform: scale(1.3);
+        color: $pizzaRed;
+        background-color: $pizzaYellow;
+        transition: transform .1s;
+        }
+    }
+}
+
+.slider2 {
+    @include e(prev){
+        @include h {
+            background-position: bottom;
+            height: 27px;
+            transform: scale(1.2);        
+            transition: transform .1s;
+        }
+    }
+}
+
+.slider2 {
+    @include e(next){
+        @include h {
+            background-position: bottom;
+            height: 28px;
+            transform: scale(1.2);        
+            transition: transform .1s;
+        }
+    }
+}

@@ -1,0 +1,6 @@
+.arrivals {
+    @include e(tab-block){
+        justify-content: center;
+        gap: 20px;
+    }
+}

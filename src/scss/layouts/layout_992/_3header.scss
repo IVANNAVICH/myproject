@@ -1,0 +1,29 @@
+.slider1 {
+    @include e(text-block){
+        width: 70%;
+        margin: 4rem 15% 3rem 15%;
+        padding: 1rem;
+    }
+}
+
+.slider1__text-block-b {
+    width: 60%;
+    margin: 4rem 34% 3rem 6%;
+    padding: 1rem;
+}
+
+.slider1__text-block-w {
+    width: 60%;
+    margin: 4rem 6% 3rem 34%;
+    padding: 1rem;
+}
+
+.slide {
+    @include e(button){
+        @include h {
+            transform: scale(1.2);
+            background-color: $pizzaRed;
+            transition: transform .2s;
+        }
+    }
+}

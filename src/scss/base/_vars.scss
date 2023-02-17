@@ -1,8 +1,10 @@
-//fonts
-$google-font: "https://fonts.googleapis.com/css?family=Ubuntu:400,500";
+
+
+$google-font: "https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Wendy+One&display=swap";
 $prefix: project- !default;
 $baseFontSize: 16px;
-$baseFontFamily: "Ubuntu", sans-serif;
+$baseFontFamily: "Quicksand", sans-serif;
+$secondFontFamily: "Wendy One", sans-serif;
 $mediumFontWeight: 500;
 
 $mobilePadding: (12px / $baseFontSize) * 1rem;
@@ -11,24 +13,40 @@ $desktopPadding: 1rem;
 // Paths
 
 $imagesPath: "../i/";
+$designImagesPath: "../i/design/";
+$productImagesPath: "../i/products/";
+$assetImagesPath: "../i/assets/";
 $fontsPath: "../fonts/";
-$usersFilesPath: "../userfiles/";
+
+// $usersFilesPath: "../userfiles/";
 
 // Colors
 $black: #000000;
 $white: #ffffff;
+$bgWhite: #f6f6f6;
 $blue: #0d6efd !default;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #d63384 !default;
-$red: #dc3545 !default;
-
+$pizzaRed: #d92727 !default;
+$pizzaYellow: #FEC524 !default;
+$orange: #f39f03 !default;
 $colors: (
   "black": $black,
   "white": $white,
+  "bgWhite": $bgWhite, 
   "blue": $blue,
   "indigo": $indigo,
   "purple": $purple,
   "pink": $pink,
-  "red": $red,
+  "red": $pizzaRed,
+  "pizzaYellow": $pizzaYellow,
+  "orange": $orange,
 ) !default;
+
+//Icons
+
+// Styles 
+$classicBoxShadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+$frameBoxShadow: 0 0 3px rgba(0, 0, 0, 0.4);
+$hugeBoxShadow: 0 0 15px rgba(0, 0, 0, 0.4);

@@ -1,0 +1,37 @@
+.head {
+    @include e(menu-span){
+        color: $white;
+        display: inline;
+        vertical-align: 5px;
+    }
+}
+
+.menu-button {
+    text-decoration: none;
+}
+
+.head {
+    @include e(nav) {
+      margin: 0 2%;
+      flex-wrap: nowrap;
+    }
+}
+
+.head {
+    @include e(img-block) {
+        flex-basis: 65%;
+        max-width: none;
+        margin-right: none;
+      
+    }
+}
+
+.head {
+    @include e(menu-trigger) {
+      flex-basis: 13%;
+    }
+} 
+
+.head-links {
+      flex-basis: 22%;
+}

@@ -1,0 +1,17 @@
+.welcome-white {
+    grid-template-columns: repeat(2,1fr);
+}
+
+.welcome-white {
+    @include e(img-block1){
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+
+.welcome-white {
+    @include e(img-block2){
+        grid-column: 2;
+        grid-row: 1;
+    }
+}

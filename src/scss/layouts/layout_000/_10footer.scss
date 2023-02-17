@@ -1,0 +1,122 @@
+// ICONS ====================
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  color: $white;
+  font-size: 1rem;
+  vertical-align: -2.5px;
+}
+
+
+// ====================
+
+.footer {
+    background-color: $white;
+}
+
+.foot {
+    background: imageDesign("footerback.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 70px;
+    color: $white;
+}
+
+.footblock {
+    width: 100%;
+    max-width: 100%;
+}
+
+.footblock {
+    @include e(p){
+    line-height: 28px;
+    text-size-adjust: 100%;
+    }   
+}
+
+.footblock {
+ @include e(h5){
+ font-family: $secondFontFamily;
+ font-size: 20px;
+ 
+ }   
+}
+
+.footblock {
+ @include e(ul){
+    padding: 0;
+ }   
+}
+
+.footblock {
+ @include e(li){
+    list-style: none;
+    margin-bottom: 8px;
+ }   
+}
+
+.footblock {
+ @include e(a){
+    text-decoration: none;
+    color: $white;
+    font-family: $baseFontFamily;
+    font-size: 14px;
+    line-height: 28px;
+
+ }   
+}
+
+.a-yellow {
+    padding: 6px 4px 6px 0;
+    background-color: $pizzaYellow;
+    border-radius: 10px;
+}
+
+.bottom {
+    margin-top: 10px;
+    padding: 0 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottom {
+    @include e(p){
+        margin: 0;
+    }
+}
+
+.bottom {
+    @include e(block){
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.bottom {
+    @include e(icons){
+        padding: 0;
+        display: flex;
+    }
+}
+
+.bottom {
+    @include e(icon){
+        list-style: none;
+        padding: 0 8px;
+    }
+}
+
+.bottom {
+    @include e(svg){
+        width: 16px;
+        height: 16px;
+    }
+}
+

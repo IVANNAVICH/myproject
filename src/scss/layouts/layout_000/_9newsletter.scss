@@ -1,0 +1,85 @@
+.news {
+ display: block;
+ background-color: $black;
+ padding: 30px;
+ position: relative;
+}
+
+.news {
+    @include e(img-block) {
+position: absolute;
+top: -91.5px;
+right: 0;
+left: 0;
+display: block;
+width: 183px;
+margin: 0 auto;
+height: fit-content;
+    }
+}
+
+.news {
+    @include e(img) {
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+}
+
+.news {
+    @include e(h3) {
+        font-family: $secondFontFamily;
+        font-size: 20px;
+        font-weight: 400;
+        color: $white;
+        padding-top: 30px;
+    }
+}
+
+.news {
+    @include e(p) {
+        color: $white;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+}
+
+.news {
+    @include e(form) {
+        width: 100%;
+        display: flex;
+        border-radius: 30px;
+        text-align: center;
+        overflow: hidden;
+        background-color: $white;
+    }
+}
+
+.news {
+    @include e(input) {
+        padding: 0.8rem 0 0.8rem 1rem;
+        vertical-align: middle;
+        flex-grow: 4;
+        font-family: $baseFontFamily;
+        background-color: $white;
+    }
+}
+
+.news {
+    @include e(input) {
+        @include f {
+            background: linear-gradient(to right, $pizzaYellow, white);
+        }
+    }
+}
+
+.news {
+    @include e(btn) {
+        background-color: $pizzaYellow;
+        padding: 0.8rem 1rem 0.8rem 0.8rem;
+        flex-grow: 1;
+        font-family: $secondFontFamily;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+}

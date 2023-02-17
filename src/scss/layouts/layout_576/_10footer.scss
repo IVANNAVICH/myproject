@@ -1,0 +1,24 @@
+.foot {
+    gap: 40px;
+}
+
+.footblock {
+    width: 40%;
+    max-width: 40%;
+}
+
+.footblock {
+    @include e(p){
+    margin: 0;
+    }   
+}
+
+.footblock {
+    @include e(h5){
+    margin: 0;
+    }   
+   }
+
+.bottom {
+    flex-direction: row;
+}

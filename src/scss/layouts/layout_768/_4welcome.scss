@@ -1,0 +1,40 @@
+.welcome {
+    grid-gap: 40px;
+}
+
+.welcome {
+    @include e(img-block){
+        grid-row: 1;
+        grid-column: 1;
+    }
+}
+
+.welcome {
+    @include e(text-block){
+        grid-row: 1;
+        grid-column: 2;
+    }
+}
+
+.welcome {
+    @include e(block-h4){
+        position: relative;
+        padding-top: 100px;
+    }
+}
+
+.welcome {
+    @include e(h4){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    }
+}
+
+.welcome {
+    @include e(p-block){
+        text-align: center;
+    }
+}

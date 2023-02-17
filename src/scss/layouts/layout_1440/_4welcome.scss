@@ -1,0 +1,13 @@
+.welcome-white {
+    @include e(img-block1){
+        width: 600px;
+        justify-self: flex-end;
+    }
+}
+
+.welcome-white {
+    @include e(img-block2){
+        width: 600px;
+        justify-self: flex-start;
+    }
+}

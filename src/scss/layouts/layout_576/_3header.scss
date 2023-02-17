@@ -1,0 +1,23 @@
+.slide {
+    @include e(p){     
+        text-align: initial;
+    }
+}
+
+.slide {
+    @include e(h2){    
+        text-align: initial;
+    }
+}
+
+.slide {
+    @include e(h3){       
+        text-align: initial; 
+    }
+}
+
+.slide {
+    @include e(button){
+        text-align: initial;
+    }
+}

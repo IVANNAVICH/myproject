@@ -1,0 +1,68 @@
+.svg-color:hover {
+    color: $pizzaYellow;
+  }
+
+//===============
+
+.head {
+  @include e(menu-trigger) {
+    display: none;
+  }
+}
+
+.head {
+  padding-bottom: 0;
+  
+}
+
+.head a {
+  text-decoration: none;
+  color: $white;
+}
+
+.head {
+    @include e(nav) {
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+.head {
+  @include e(img-block) {
+    margin: 0;
+    max-width: none;
+    flex-basis: 25%;
+  }
+}
+
+.head {
+  @include e(menu) {
+    flex-basis: 50%;
+  }
+} 
+
+.head-links {
+    flex-basis: 25%;
+    justify-content: center;
+    margin: 0;
+}
+
+.head-links {
+  @include e(p){
+      @include h{
+          color: $pizzaYellow;
+          cursor: pointer;
+      }
+  }
+}
+
+.head-links {
+  @include e(select-icon){
+      @include h{
+          color: $pizzaYellow;
+          cursor: pointer;
+      }
+  }
+}
+
+
